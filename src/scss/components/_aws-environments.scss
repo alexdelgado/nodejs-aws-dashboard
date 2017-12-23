@@ -1,0 +1,61 @@
+.aws-environments {
+
+    h1 {
+        color: #444;
+
+        span {
+            border-bottom: 2px solid #e4e7ea;
+            padding: 0 7px 3px 0;
+        }
+    }
+
+    hr {
+        border-top: 1px solid #e4e7ea;
+        margin: 50px 0;
+    }
+
+    .environment {
+        margin-top: 30px;
+    }
+
+    .branch-name {
+        border: 2px solid #EFEFEF;
+        color: #555;
+        font-size: 24px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .jump-links {
+        display: none;
+        padding: 15px 15px 15px 5px;
+        text-align: left;
+
+        a {
+            margin-left: 15px;
+            text-decoration: none;
+        }
+    }
+
+    .environment-urls {
+        margin: 50px 0;
+
+        &__heading {
+            margin-bottom: 10px;
+        }
+
+        &__version {
+            color: #777;
+            margin-bottom: 30px;
+            width: 100%;
+
+            td {
+                text-align: left;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

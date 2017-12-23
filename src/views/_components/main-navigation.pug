@@ -1,0 +1,27 @@
+﻿//- components/main-navigation.pug
+
+- var isActive = function(route) { return (undefined !== tmpl && tmpl.hasOwnProperty('active') && route === tmpl.active ? 'active' : '' ) }
+
+<nav id="main-nav" class="navbar navbar-default main-nav">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav main-nav__menu">
+                <li class="main-nav__menu-item #{isActive('home')}">
+                    <a href="/" target="_self" class="main-nav__link">Home</a>
+                </li>
+                <li class="main-nav__menu-item #{isActive('api-listing')}">
+                    <a href="/api-listing" target="_self" class="main-nav__link">API Endpoints</a>
+                </li>
+                <li class="main-nav__menu-item #{isActive('route53')}">
+                    <a href="/route53" target="_self" class="main-nav__link">Route53</a>
+                </li>
+                <li class="dropdown main-nav__menu-item #{isActive('ec2-instances')}">
+                    <a href="#" class="dropdown-toggle main-nav__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EC2 Instances <span class="caret"></span></a>
+                    <ul class="dropdown-menu sub-nav">
+                        <li><a href="/ec2" target="_self" class="sub-nav__link">All Instances</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

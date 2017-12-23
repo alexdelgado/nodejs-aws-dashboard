@@ -1,0 +1,240 @@
+//- index.pug
+-
+    var tmpl = {
+        "title": "Dashboard",
+        "active": "home"
+    }
+
+doctype html
+html
+    head
+        include _components/header.pug
+    body.home
+        include _components/main-navigation.pug
+
+        <div class="aws-environments">
+
+            <div id="container" class="container aws-environments__container">
+
+                <form name="cmsEnvironments" id="cms-environments" autocomplete="false">
+                    <input type="text" name="branch" value="" id="branch-name" class="branch-name" placeholder="git branch (e.g. develop)" autofocus>
+                    <div id="jump-links" class="jump-links">
+                        <span>Jump To:</span>
+                        <a href="#systest">System Testing</a>
+                        <a href="#uat">User Acceptance Testing</a>
+                    </div>
+                </form>
+
+                <div id="environment-urls" class="environment-urls"></div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1><span>Production<span></h1>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-6">
+                        
+                        <h2>ABC Network</h2>
+
+                        <div class="environment">
+                            <h3>Sites <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="abc-network-prod" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="environment">
+                            <h3>CMS <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="abc-network-cms-prod" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+                        
+                        <h2>DEF Network</h2>
+
+                        <div class="environment">
+                            <h3>Sites <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="def-network-prod" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="environment">
+                            <h3>CMS <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="def-network-cms-prod" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr class="divider">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1><span>Staging</span></h1>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-6">
+
+                        <h2>ABC Network</h2>
+
+                        <div class="environment">
+                            <h3>Sites <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="abc-network-stg" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="environment">
+                            <h3>CMS <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="abc-network-cms-stg" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                        <h2>DEF Network</h2>
+                        
+                        <div class="environment">
+                            <h3>Sites <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="def-network-stg" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="environment">
+                            <h3>CMS <a href="" target="_blank" class="glyphicon glyphicon-new-window"></a></h3>
+                            <table id="def-network-cms-stg" class="table table-striped aws-environments__env-table">
+                                <tbody>
+                                    <tr>
+                                        <td>Version:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Built:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last Commit:</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        include _components/footer.pug

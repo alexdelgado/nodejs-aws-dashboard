@@ -1,0 +1,33 @@
+//- Route53/index.pug
+-
+    var tmpl = {
+        "title": "EC2 Instances",
+        "active": "ec2-instances"
+    }
+
+doctype html
+html
+    head
+        include ../_components/header.pug
+    body.ec2-instances
+        include ../_components/main-navigation.pug
+
+        <div class="container">
+            <h1>EC2 Instances</h1>
+            <table id="ec2-instances-table" class="table table-striped table-hover table--sortable">
+                <thead>
+                    <tr>
+                        <th width="10">#</th>
+                        <th>Instance DNS <span class="header__sort-icon"></span></th>
+                        <th>Instance ID <span class="header__sort-icon"></span></th>
+                        <th>Instance Type <span class="header__sort-icon"></span></th>
+                        <th>Instance Status <span class="header__sort-icon"></span></th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="loading" class="loading">
+                <img src="/static/img/ripple.svg" class="loading__icon">
+            </div>
+        </div>
+
+        include ../_components/footer.pug

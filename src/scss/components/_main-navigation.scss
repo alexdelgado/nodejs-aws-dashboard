@@ -1,0 +1,14 @@
+﻿.main-nav {
+
+    .dropdown-menu {
+        > li {
+            > a {
+                &:focus,
+                &:hover {
+                    color: #333;
+                }
+                
+            }
+        }
+    }
+}

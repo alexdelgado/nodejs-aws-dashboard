@@ -1,0 +1,38 @@
+{
+  "name": "aws-dashboard",
+  "version": "0.1.0",
+  "description": "Amazon Web Services Web Dashboard",
+  "main": "index.js",
+  "author": "Alex Delgado",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexdelgado/nodejs-aws-dashboard.git"
+  },
+  "scripts": {
+    "start": "node static/node/server.js"
+  },
+  "dependencies": {
+    "aws-sdk": ">= 2.0.9",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "request": "^2.81.0",
+    "systemjs": "^0.20.12"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-tslint": "^7.1.0",
+    "gulp-typescript": "^3.1.6",
+    "pug": "^2.0.0-beta.12",
+    "tslint": "^5.0.0",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.0"
+  }
+}

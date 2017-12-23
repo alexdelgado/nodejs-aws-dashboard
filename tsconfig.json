@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outFile": "app.min.js",
+    "target": "es5",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "module": "system"
+  }
+}

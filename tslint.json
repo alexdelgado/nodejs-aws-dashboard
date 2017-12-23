@@ -1,0 +1,11 @@
+{
+    "extends": "tslint:recommended",
+    "rulesDirectory": [],
+    "rules": {
+        "align": [],
+        "max-line-length": [],
+        "no-console": [],
+        "no-reference": false,
+        "object-literal-sort-keys": false
+    }
+}

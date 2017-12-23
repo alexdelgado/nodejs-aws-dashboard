@@ -1,0 +1,32 @@
+//- Route53/index.pug
+-
+    var tmpl = {
+        "title": "Route53",
+        "active": "route53"
+    }
+
+doctype html
+html
+    head
+        include ../_components/header.pug
+    body.route53
+        include ../_components/main-navigation.pug
+
+        <div class="container">
+            <h1>Route53</h1>
+            <table id="hosted-zones-table" class="table table-striped table-hover table--sortable">
+                <thead>
+                    <tr>
+                        <th width="10">#</th>
+                        <th>Zone Name <span class="header__sort-icon"></span></th>
+                        <th>Zone ID <span class="header__sort-icon"></span></th>
+                        <th>Private Zone <span class="header__sort-icon"></span></th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="loading" class="loading">
+                <img src="/static/img/ripple.svg" class="loading__icon">
+            </div>
+        </div>
+
+        include ../_components/footer.pug

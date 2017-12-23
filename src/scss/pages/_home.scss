@@ -1,0 +1,38 @@
+﻿.home {
+    .aws-environments {
+
+        &__container {
+            padding: 50px;
+        }
+    }
+
+    .environment {
+        .glyphicon-new-window {
+            font-size: 16px;
+            line-height: 35px;
+            margin-left: 10px;
+            vertical-align: top;
+        }
+    }
+
+    .branch-name {
+        border: 2px solid #EFEFEF;
+        color: #555;
+        font-size: 24px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .loading {
+        height: 24px;
+        font-style: italic;
+        margin-bottom: 30px;
+        text-align: left;
+        width: 100%;
+
+        &__icon {
+            height: 100%;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// sass-lint:disable class-name-format
+.btn {
+    background: #FFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+
+    &:hover {
+        background: #18bc9c;
+    }
+
+    &_name_load-more {
+        padding: 10px 30px;
+    }
+}

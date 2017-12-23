@@ -1,0 +1,22 @@
+﻿//- components/footer.pug
+
+<div id="jump-to-top" class="jump-to-top">
+    <a href="#main-nav">Jump to Top</a>
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+noscript
+    iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWMSRL8" height="0" width="0" style="display:none;visibility:hidden"
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.tablesorter.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/bluebird.min.js"></script>
+<script src="/static/js/system-production.js"></script>
+<script src="/static/js/app.min.js"></script>
+script.
+    SystemJS.import("app").then(function (module) {
+        var app = new module.App();
+        app.init();
+    });

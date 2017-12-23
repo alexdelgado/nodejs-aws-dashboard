@@ -1,0 +1,28 @@
+variables:
+  VERSION: "1.2.$CI_PIPELINE_ID"
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - 'npm install'
+    - 'gulp build'
+  artifacts:
+    untracked: true
+  allow_failure: false
+  tags:
+    - js
+
+deploy:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    - 'rsync -avz --delete --include="node_modules/***" --include="static/***" --include="package.json" --exclude="*" ./ alex@awsdashboard.dev:/var/www/awsdashboard.dev'
+  only:
+    - master
+  tags:
+    - js
